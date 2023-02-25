@@ -8,3 +8,7 @@ function arrayPlusArray(arr1, arr2) {
   const total = combineArr.reduce((a, cv) => a + cv, 0)
   return total
 }
+
+function arrayPlusArray(arr1, arr2) {
+  return arr1.concat(arr2).reduce((acc, cur) => acc + cur);
+}
