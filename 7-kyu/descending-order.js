@@ -17,3 +17,13 @@ function descendingOrder(n){
   return +n
   
 }
+
+// Other ways to solve it
+
+function descendingOrder(n){
+  return parseInt(String(n).split('').sort().reverse().join(''))
+}
+
+function descendingOrder(n) {
+  return +n.toString().split('').sort().reverse().join('');
+}
